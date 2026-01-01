@@ -1,14 +1,48 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rock Paper Scissors</title>
-    <link href="./style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <h1>Rock Paper Scissors</h1>
-    <p>Press <code>Ctrl + Shift + j</code> to play the game in console.</p>
-    <script src="./main.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Rock Paper Scissors</title>
+		<link href="./style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="left">
+				<div>
+					<div class="header">
+						<h1>rock paper scissors</h1>
+						<p>whoever reaches the score of 5 first, wins the game</p>
+					</div>
+					<div class="main">
+						<h3>make your choice:</h3>
+						<div>
+							<button type="button">
+								<img src="./images/rock.png" alt="rock" />
+								<p>rock</p>
+							</button>
+							<button type="button">
+								<img src="./images/paper.png" alt="paper" />
+								<p>paper</p>
+							</button>
+							<button type="button">
+								<img src="./images/scissor.png" alt="scissor" />
+								<p>scissors</p>
+							</button>
+						</div>
+						<h3>computer choice:</h3>
+					</div>
+					<div class="stats">
+						<h4>round:</h4>
+						<h4>you:</h4>
+						<h4>computer:</h4>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<h4>log:</h4>
+			</div>
+		</div>
+		<script src=""></script>
+	</body>
 </html>

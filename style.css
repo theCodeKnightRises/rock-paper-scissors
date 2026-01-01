@@ -1,12 +1,139 @@
 body {
-  background-color: white;
-  color: black;
+	background-color: #1a1b25;
+	text-decoration: none;
+	color: #c0caf5;
+	font-family: pixel-fonts;
+	box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #282828;
-    color: white;
-    text-align: center;
-  }
+@font-face {
+	font-family: pixel-fonts;
+	src: url(./fonts/m5x7.ttf);
+}
+
+h1 {
+	font-size: 64px;
+	font-weight: 600;
+	color: #80a8fd;
+}
+
+p {
+	font-size: 22px;
+}
+
+h3 {
+	font-size: 36px;
+	font-weight: 500;
+}
+
+h4 {
+	font-size: 32px;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+}
+
+h1,
+p {
+	margin: 10px;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+	margin-left: 400px;
+	margin-right: 400px;
+	margin-top: 100px;
+	flex-wrap: wrap;
+	/* border: solid 1px white; */
+}
+
+.main,
+.header {
+	text-align: center;
+}
+
+.header {
+	border-bottom: 1px solid #2c3036;
+}
+
+.left,
+.right {
+	border: 1px solid #2c3036;
+	flex: 3;
+}
+
+.right {
+	flex: 1;
+	align-self: stretch;
+}
+
+.right h4 {
+	padding: 25px 0 25px 25px;
+	/* border-bottom: 1px solid #2c3036; */
+	margin: 0;
+}
+.stats {
+	border-top: 1px solid #2c3036;
+	display: flex;
+	justify-content: space-evenly;
+	/* align-content: center; */
+	/* align-items: center; */
+	/* gap: 150px; */
+	/* flex-basis: calc(33.3333% - 2%); */
+	flex: 0;
+	/* width: 1010px; */
+	/* height: 650px; */
+	/* padding-top: 0; */
+	/* padding-bottom: 0; */
+	/* margin-bottom: 0; */
+	/* margin-top: 0; */
+	/* box-sizing: border-box; */
+	/* height: 100%; */
+}
+
+.stats > h4 {
+	margin: 0;
+	/* padding: 25px 0; */
+	padding: 25px calc(33.3333% / 3);
+	/* display: flex; */
+}
+
+h4:nth-child(2) {
+	/* padding-left: calc(33.3333% / 3); */
+	/* padding-right: calc(33.3333% / 3); */
+	align-self: center;
+	border-right: 1px solid #2c3036;
+	border-left: 1px solid #2c3036;
+	color: #9ece6a;
+}
+
+h4:nth-child(3) {
+	color: #f7768e;
+}
+
+.main > div {
+	display: flex;
+	/* flex: 2; */
+	flex-basis: 100%;
+	justify-content: center;
+	gap: 25px;
+}
+
+button {
+	background: none;
+	border: 1px solid #2c3036;
+	color: inherit;
+	/* border: none; */
+	font: inherit;
+	cursor: pointer;
+	/* outline: inherit; */
+	padding: 0;
+	width: 100px;
+	height: 100px;
+}
+
+button > p {
+	margin: 0;
 }
