@@ -19,11 +19,12 @@ h1 {
 
 p {
 	font-size: 22px;
+	/* font-weight: 300; */
 }
 
 h3 {
 	font-size: 36px;
-	font-weight: 500;
+	font-weight: 300;
 }
 
 h4 {
@@ -46,7 +47,7 @@ p {
 	margin-right: 400px;
 	margin-top: 100px;
 	flex-wrap: wrap;
-	/* border: solid 1px white; */
+	/* border: dashed 1px white; */
 }
 
 .main,
@@ -55,13 +56,14 @@ p {
 }
 
 .header {
-	border-bottom: 1px solid #2c3036;
+	border-bottom: 1px dashed #2c3036;
 }
 
 .left,
 .right {
-	border: 1px solid #2c3036;
+	border: 1px dashed #2c3036;
 	flex: 3;
+	border-radius: 10px;
 }
 
 .right {
@@ -71,11 +73,11 @@ p {
 
 .right h4 {
 	padding: 25px 0 25px 25px;
-	/* border-bottom: 1px solid #2c3036; */
+	/* border-bottom: 1px dashed #2c3036; */
 	margin: 0;
 }
 .stats {
-	border-top: 1px solid #2c3036;
+	border-top: 1px dashed #2c3036;
 	display: flex;
 	justify-content: space-evenly;
 	/* align-content: center; */
@@ -102,16 +104,28 @@ p {
 	justify-content: center;
 }
 
+h4:nth-child(1) {
+	color: #80a8fd;
+}
+
 h4:nth-child(2) {
 	/* padding-left: calc(33.3333% / 3); */
 	/* padding-right: calc(33.3333% / 3); */
-	align-self: center;
-	border-right: 1px solid #2c3036;
-	border-left: 1px solid #2c3036;
+	/* align-self: center; */
+	border-right: 1px dashed #2c3036;
+	border-left: 1px dashed #2c3036;
 	color: #9ece6a;
 }
 
 h4:nth-child(3) {
+	color: #f7768e;
+}
+
+.humanSelection {
+	color: #9ece6a;
+}
+
+.computerSelection {
 	color: #f7768e;
 }
 
@@ -125,7 +139,7 @@ h4:nth-child(3) {
 
 button {
 	background: none;
-	border: 1px solid #2c3036;
+	border: 1px dashed #2c3036;
 	color: inherit;
 	/* border: none; */
 	font: inherit;
@@ -134,8 +148,19 @@ button {
 	padding: 0;
 	width: 100px;
 	height: 100px;
+	border-radius: 5px;
 }
 
 button > p {
 	margin: 0;
+}
+
+span {
+	padding: 0 5px;
+}
+
+.right > p {
+	margin: 0;
+	line-height: 0.5;
+	padding: 0 0 25px 25px;
 }
